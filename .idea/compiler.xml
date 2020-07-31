@@ -6,15 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="account_client" />
         <module name="eureka_server" />
-        <module name="spring_springmvc" />
+        <module name="account_client" />
         <module name="account_service" />
+        <module name="spring_springmvc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="dcyStudy" target="1.8" />
-      <module name="spring_springmvc" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -24,7 +23,7 @@
       <module name="dcyStudy" options="-parameters" />
       <module name="eureka_server" options="-parameters" />
       <module name="spring_cloud" options="-parameters" />
-      <module name="spring_springmvc" options="-parameters" />
+      <module name="spring_springmvc" options="" />
     </option>
   </component>
 </project>
