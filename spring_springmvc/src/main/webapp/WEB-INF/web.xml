@@ -3,6 +3,8 @@
         "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
+    <!--初始化参数-->
+
     <!-- SpringMVC的核心控制器 -->
     <servlet>
         <servlet-name>dispatcherServlet</servlet-name>
@@ -17,6 +19,10 @@
     <servlet>
         <servlet-name>ControllerServlet</servlet-name>
         <servlet-class>com.dcy.servlet.ControllerServlet</servlet-class>
+        <init-param>
+            <param-name>test</param-name>
+            <param-value>1</param-value>
+        </init-param>
     </servlet>
     <servlet-mapping>
         <servlet-name>ControllerServlet</servlet-name>
