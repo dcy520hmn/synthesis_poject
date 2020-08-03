@@ -8,8 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka_server" />
         <module name="account_client" />
-        <module name="account_service" />
         <module name="spring_springmvc" />
+        <module name="account_service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

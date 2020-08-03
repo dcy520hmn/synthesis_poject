@@ -9,12 +9,11 @@ import java.io.IOException;
 
 public class ControllerServlet extends HttpServlet {
 
-    private ServletConfig servletConfig;
 
     @Override
     public void init() throws ServletException {
-
-        System.out.println("进行初始话");
+        System.out.println("init-params:"+this.getServletConfig().getInitParameter("test"));
+        System.out.println("context-params:"+this.getServletContext().getInitParameter("url"));
     }
 
 
