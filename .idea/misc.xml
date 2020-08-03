@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/spring_springmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_ssm" />
     <type id="Spring" />
   </component>
   <component name="MavenProjectsManager">
@@ -12,11 +13,6 @@
         <option value="$PROJECT_DIR$/spring_cloud/pom.xml" />
         <option value="$PROJECT_DIR$/spring_springmvc/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/account_client/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
