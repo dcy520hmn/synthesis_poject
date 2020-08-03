@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring_springmvc</module>
+        <module>spring_ssm</module>
     </modules>
 
     <parent>

@@ -3,19 +3,11 @@
         "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:applicationContext.xml</param-value>
-    </context-param>
+
     <!-- SpringMVC的核心控制器 -->
     <servlet>
         <servlet-name>remoting</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <!--若不设置该初始化值，自动寻找到applicationContext.xml-->
-        <init-param>
-            <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:applicationContext.xml</param-value>
-        </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
