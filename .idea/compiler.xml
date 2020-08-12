@@ -11,13 +11,12 @@
         <module name="account_client" />
         <module name="spring_springmvc" />
         <module name="spring_ssm" />
+        <module name="springboot" />
         <module name="spirngboot" />
-        <module name="dcyStudy" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spirngboot" target="1.5" />
-      <module name="springboot" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

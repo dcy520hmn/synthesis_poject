@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.dcy</groupId>
-    <artifactId>dcyStudy</artifactId>
+    <artifactId>springboot</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
@@ -13,12 +13,30 @@
         <java.version>1.8</java.version>
     </properties>
 
+    <parent>
+        <artifactId>synthesis_poject</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <dependencies>
+
         <!--web启动器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!--整合连接池-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <!--mysql-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
         <!--mybatis启动器-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -42,16 +60,6 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
-        </dependency>
-        <!--mysql-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-        <!--整合连接池-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
 
     </dependencies>
