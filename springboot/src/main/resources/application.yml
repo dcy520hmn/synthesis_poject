@@ -8,3 +8,9 @@ spring:
 mybatis:
   type-aliases-package: com.springboot.pojo
   mapper-locations: mappers/*.xml
+
+
+#jdbc.driverClassName=com.mysql.jdbc.Driver
+#jdbc.url=jdbc:mysql://172.27.101.186:3306/leyou
+#jdbc.username=root
+#jdbc.password=0325
