@@ -27,6 +27,7 @@
         <mapper.starter.version>2.0.2</mapper.starter.version>
     </properties>
 
+
     <dependencyManagement>
         <dependencies>
             <!--spring_cloud-->
@@ -35,9 +36,8 @@
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
-                <scope>runtime</scope>
+                <scope>import</scope>
             </dependency>
-
 
             <!--mybatis-->
             <dependency>
