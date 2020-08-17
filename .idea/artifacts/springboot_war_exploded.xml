@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="springboot" />
+          <element id="module-output" name="spring_boot" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-web:2.0.1.RELEASE" />
@@ -72,7 +72,7 @@
           <element id="library" level="project" name="Maven: junit:junit:4.12" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="springboot/web/Web" />
+      <element id="javaee-facet-resources" facet="spring_boot/web/Web" />
     </root>
   </artifact>
 </component>
