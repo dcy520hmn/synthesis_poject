@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring_ssh" />
         <module name="account_service" />
         <module name="eureka_server" />
         <module name="account_client" />
         <module name="spring_springmvc" />
+        <module name="spring_boot" />
         <module name="spring_ssm" />
-        <module name="springboot" />
         <module name="spirngboot" />
       </profile>
     </annotationProcessing>
@@ -24,10 +25,11 @@
       <module name="account_client" options="-parameters" />
       <module name="account_service" options="-parameters" />
       <module name="eureka_server" options="-parameters" />
+      <module name="spring_boot" options="-parameters" />
       <module name="spring_cloud" options="-parameters" />
       <module name="spring_springmvc" options="" />
+      <module name="spring_ssh" options="-parameters" />
       <module name="spring_ssm" options="" />
-      <module name="springboot" options="-parameters" />
     </option>
   </component>
 </project>

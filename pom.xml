@@ -12,7 +12,8 @@
         <module>spring_springmvc</module>
         <module>spring_ssm</module>
         <module>spring_cloud</module>
-        <module>springboot</module>
+        <module>spring_boot</module>
+        <module>spring_ssh</module>
     </modules>
 
     <parent>

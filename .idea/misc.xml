@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/spring_springmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_ssh" />
     <file type="web" url="file://$PROJECT_DIR$/spring_ssm" />
     <type id="Spring" />
   </component>
