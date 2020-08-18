@@ -11,6 +11,7 @@ public class AccountService {
     @Autowired
     private AccountMapper accountMapper;
     public Account findAllAccount(Integer accountId){
-        return accountMapper.accountMapper(accountId);
+        Account account = accountMapper.findAccountById(accountId);
+        return  account;
     }
 }

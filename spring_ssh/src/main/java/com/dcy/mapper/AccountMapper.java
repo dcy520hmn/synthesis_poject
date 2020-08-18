@@ -1,27 +1,29 @@
 package com.dcy.mapper;
 
 import com.dcy.pojo.Account;
+import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate5.HibernateCallback;
 import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
 import org.springframework.stereotype.Repository;
 
-@Repository
+import java.util.List;
+
+
 public class AccountMapper extends HibernateDaoSupport {
-
-    @Autowired
-    private SessionFactory sessionFactory;
-
-    //获取和当前线程绑定的Seesion
-    private Session getSession()
-    {
-        return sessionFactory.getCurrentSession();
-    }
-
-    public  Account accountMapper(Integer accountId){
-        Query query=getSession().createQuery("from Account where  id = ?");
-        return null;
+    public Account findAccountById(Integer id){
+        return getHibernateTemplate().execute(new HibernateCallback<Account>() {
+            @Override
+            public Account doInHibernate(Session session) throws HibernateException {
+                String sql = "from Account where id =:id";
+                Query query = session.createQuery(sql,Account.class);
+                query.setInteger("id",id);
+                List list = query.list();
+                return (Account) list.get(0);
+            }
+        });
     }
 }
