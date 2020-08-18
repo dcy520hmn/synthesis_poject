@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <!-- spring整合hibernate：在spring中放置配置信息 -->
+    <bean  class="org.springframework.orm.hibernate5.LocalSessionFactoryBean" id="sessionFactory">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.format_sql">true</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+            </props>
+        </property>
+        <!-- 引入orm元数据，指定所在包路径，spring自动读取 -->
+        
+        <property name="configLocation" value="WEB-INF/hibernate.cfg.xml"></property>
+    </bean>
+
+    <!-- dao -->
+    <bean name="accountMapper" class="com.dcy.mapper.AccountMapper">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+</beans>
