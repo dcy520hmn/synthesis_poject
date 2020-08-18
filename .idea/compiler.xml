@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring_httpInvoker" />
         <module name="spring_ssh" />
         <module name="account_service" />
         <module name="eureka_server" />
@@ -28,6 +29,7 @@
       <module name="eureka_server" options="-parameters" />
       <module name="spring_boot" options="-parameters" />
       <module name="spring_cloud" options="-parameters" />
+      <module name="spring_httpInvoker" options="-parameters" />
       <module name="spring_springmvc" options="" />
       <module name="spring_ssh" options="-parameters" />
       <module name="spring_ssm" options="" />
