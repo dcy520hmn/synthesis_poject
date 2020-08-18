@@ -11,6 +11,12 @@ public class AccountService {
     private AccountMapper accountMapper;
 
     public Account findAccountById(Integer id){
+        //模拟超时
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         Account account = accountMapper.selectByPrimaryKey(id);
         return account;
     }

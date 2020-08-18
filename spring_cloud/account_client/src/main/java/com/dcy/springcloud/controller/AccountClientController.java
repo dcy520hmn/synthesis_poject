@@ -13,9 +13,19 @@ public class AccountClientController {
     @Autowired
     private AccountClientService accountClientService;
 
-    @RequestMapping("/findAccountById/{id}")
-    public Account findAccountById(@PathVariable  Integer id){
-        return  accountClientService.findAccountById(id);
+    @RequestMapping("/findAccountById/noRibon/{id}")
+    public Account findAccountByIdNoRibbon(@PathVariable  Integer id){
+        return  accountClientService.findAccountByIdNoRibbon(id);
+    }
+
+    @RequestMapping("/findAccountById/ribbon/{id}")
+    public Account findAccountByIdRibbon(@PathVariable  Integer id){
+        return  accountClientService.findAccountByIdRibbon(id);
+    }
+
+    @RequestMapping("/findAccountById/hystrix/{id}")
+    public String findAccountByIdRibbonHystrix(@PathVariable  Integer id){
+        return  accountClientService.findAccountByIdHystrix(id);
     }
 
 }
