@@ -1,9 +1,11 @@
 package com.dcy.springcloud.service;
 
+import com.dcy.springcloud.feginClient.AccountFeignClient;
 import com.dcy.springcloud.pojo.Account;
 import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.ribbon.proxy.annotation.Hystrix;
+import net.bytebuddy.asm.Advice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -18,6 +20,9 @@ public class AccountClientService {
 
     @Autowired
     private RestTemplate restTemplate;
+
+    @Autowired
+    private AccountFeignClient accountFeignClient;
 
     @Autowired
     private DiscoveryClient discoveryClient;// Eureka客户端，可以获取到服务实例信息
@@ -60,6 +65,9 @@ public class AccountClientService {
         return restTemplate.getForObject(baseUrl,String.class);
     }
 
+    public Account findAccountByIdFeign(Integer id){
+       return accountFeignClient.findAccountByIdFegin(id);
+    }
     public String findAccountByIdHystrixError(){
         return "system busy";
     }

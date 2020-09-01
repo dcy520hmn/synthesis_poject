@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- 选择数据库引擎：默认通用的（最短）：数据库方言 -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- 在控制台显示sql语句 -->
+        <property name="hibernate.show_sql">true</property>
+        <!-- 按格式显示sql语句 -->
+        <property name="hibernate.format_sql">true</property>
+        <!-- 自动创建表：按何种方式 -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!--增加mapper-->
+        <mapping resource="com/dcy/mapper/account.hbm.xml"/>
+    </session-factory>
+
+</hibernate-configuration>

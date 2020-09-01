@@ -28,4 +28,8 @@ public class AccountClientController {
         return  accountClientService.findAccountByIdHystrix(id);
     }
 
+    @RequestMapping("/findAccountById/feign/{id}")
+    public Account findAccountByIdFegin(@PathVariable Integer id){
+        return accountClientService.findAccountByIdFeign(id);
+    }
 }
