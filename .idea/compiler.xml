@@ -7,17 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring_httpInvoker" />
-        <module name="leadingEnd" />
-        <module name="account_zuul" />
-        <module name="zuul_server" />
         <module name="spring_ssh" />
         <module name="account_service" />
-        <module name="eureka_server" />
         <module name="account_client" />
         <module name="spring_springmvc" />
         <module name="spring_boot" />
         <module name="spring_ssm" />
         <module name="spirngboot" />
+        <module name="fgosRelation" />
+        <module name="leadingEnd" />
+        <module name="account_zuul" />
+        <module name="zuul_server" />
+        <module name="eureka_server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,6 +33,7 @@
       <module name="account_service" options="-parameters" />
       <module name="account_zuul" options="-parameters" />
       <module name="eureka_server" options="-parameters" />
+      <module name="fgosRelation" options="-parameters" />
       <module name="leadingEnd" options="-parameters" />
       <module name="spring_boot" options="-parameters" />
       <module name="spring_cloud" options="-parameters" />

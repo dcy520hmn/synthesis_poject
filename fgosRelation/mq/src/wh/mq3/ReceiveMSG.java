@@ -17,7 +17,7 @@ public class ReceiveMSG {
 	}
 
 	public ReceiveMSG() {
-		MQEnvironment.hostname = "192.168.10.201";
+		MQEnvironment.hostname = "172.20.125.35";
 		// 通道类型为服务器连接通道
 		MQEnvironment.channel = "tongdao";
 		MQEnvironment.CCSID = 1381;
