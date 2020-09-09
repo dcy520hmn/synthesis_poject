@@ -15,6 +15,7 @@
         <module>spring_boot</module>
         <module>spring_ssh</module>
         <module>spring_httpInvoker</module>
+        <module>leadingEnd</module>
     </modules>
 
     <parent>

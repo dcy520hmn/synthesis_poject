@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/CL3Export.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/CL3Nonexport.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/com.ibm.mq.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/com.ibm.mq.jms.Nojndi.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/com.ibm.mq.soap.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/com.ibm.mqjms.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/commonservices.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/connector.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/dhbcore.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/fscontext.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/jms.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/jndi.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/jta.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/ldap.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/postcard.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/providerutil.jar"/>
+	<classpathentry kind="lib" path="D:/ejb/mq/rmm.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
