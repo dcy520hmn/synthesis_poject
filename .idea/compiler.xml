@@ -15,7 +15,6 @@
         <module name="spring_ssm" />
         <module name="spirngboot" />
         <module name="fgosRelation" />
-        <module name="leadingEnd" />
         <module name="account_zuul" />
         <module name="zuul_server" />
         <module name="eureka_server" />
@@ -23,6 +22,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="account_zuul" target="1.8" />
+      <module name="leading_End" target="1.8" />
       <module name="spirngboot" target="1.5" />
       <module name="springboot" target="1.8" />
     </bytecodeTargetLevel>
@@ -34,7 +34,7 @@
       <module name="account_zuul" options="-parameters" />
       <module name="eureka_server" options="-parameters" />
       <module name="fgosRelation" options="-parameters" />
-      <module name="leadingEnd" options="-parameters" />
+      <module name="leading_End" options="-parameters" />
       <module name="spring_boot" options="-parameters" />
       <module name="spring_cloud" options="-parameters" />
       <module name="spring_httpInvoker" options="-parameters" />

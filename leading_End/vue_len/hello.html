@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="app">
+		<h1>Vue入门案例</h1>
+		<input type="text" v-model="num" />
+		<button @click="add()">点我</button>
+		<span v-text="num"></span>
+		<ul>
+			<li v-for="user in users"><span v-text="user.name"></span></li>
+		</ul>
+		<div :title="title" :class="{active:isActive}"></div>
+		<!-- 组件化 全绝注册-->
+		<counter></counter>
+		<counter></counter>
+		<counter></counter><br/>
+		<!-- 局部注册 -->
+		<counter1></counter1>
+		<!-- 组件之间的通信 -->
+		<prop :users="users"></prop>
+		<!-- 子组件像父组件进行通信 -->
+		<h1>num:{{num}}</h1>
+		<prop1 @add="add" @del="del"></prop1>
+	</div>
+</body>
+<script type="text/javascript" src="node_modules/vue/dist/vue.js"></script>
+<script type="text/javascript">
+	
+	Vue.component("prop1",{
+		template:'\
+            <div>\
+	            <button @click="add">加</button>  \
+	            <button @click="del">减</button>  \
+        	</div>',
+		props:['num'],
+		methods:{
+			add(){
+				this.$emit("add");
+			},
+			del(){
+				this.$emit("del");
+			}
+		}
+	});
+	
+	Vue.component("prop",{
+		template:'\
+	        <ul>\
+	        <li v-for="user in users" :key="user.name">{{user.name}} : {{user.age}}</li>\
+	    </ul>\
+	    ',
+		props:{
+			users:{
+				type:Array,
+				default:[],
+				required:true
+			}
+		}
+	});		
+	
+	Vue.component("counter",{
+			template:'<button @click="count++">{{count}}</button>',
+		data(){
+			return{
+				count:0
+			}
+		}
+	});
+	
+	const counter1 = {
+		template:'<button @click="count++">{{count}}</button>',
+		data(){
+			return{
+				count:0
+			}
+		}	
+	};
+
+	var app = new Vue({
+		el:"#app",
+		data:{
+			name:"张三",
+			num:1,
+			users:[
+	                {name:'柳岩', gender:'女', age: 21},
+	                {name:'峰哥', gender:'男', age: 18},
+	                {name:'范冰冰', gender:'女', age: 24},
+	                {name:'刘亦菲', gender:'女', age: 18},
+	                {name:'古力娜扎', gender:'女', age: 25}
+	            ],
+	        title:"title",
+	        isActive:true,
+		},
+		components:{
+			counter1:counter1
+		},
+		methods:{
+			add:function(){
+				this.num++;
+			},
+			del:function(){
+				this.num--;
+			}
+		},
+		created:function(){
+			this.num = 100;
+		},
+		watch:{
+			num(newNum,oldNum){
+				console.log(newNum+','+oldNum)
+			}
+		}
+	});
+
+	
+		
+		
+	</script>
+</html>

@@ -1,6 +1,10 @@
 package wh.mq3;
 
 import java.io.EOFException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 import com.ibm.mq.MQC;
 import com.ibm.mq.MQEnvironment;
 import com.ibm.mq.MQException;
@@ -13,7 +17,8 @@ public class ReceiveMSG {
 	private MQQueueManager qMgr;
 
 	public static void main(String[] args) {
-		new ReceiveMSG();
+//		new ReceiveMSG();
+		System.out.println(1<<0);
 	}
 
 	public ReceiveMSG() {

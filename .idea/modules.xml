@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring_httpInvoker/InvokeClient/InvokeClient.iml" filepath="$PROJECT_DIR$/spring_httpInvoker/InvokeClient/InvokeClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_httpInvoker/InvokeServer/InvokeServer.iml" filepath="$PROJECT_DIR$/spring_httpInvoker/InvokeServer/InvokeServer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fgosRelation/mq/mq.iml" filepath="$PROJECT_DIR$/fgosRelation/mq/mq.iml" />
     </modules>
   </component>
 </project>
