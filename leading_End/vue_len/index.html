@@ -24,6 +24,10 @@
 	//创建VueRouter对象
 	const router = new VueRouter({
 	    routes:[ // 编写路由规则
+            {//访问index页面的时候，自动路由到登录页面
+                path: "/",
+                redirect:"/login"
+            },
 	        {
 	            path:"/login", // 请求路径
 	            component:loginForm // 组件名称

@@ -6,18 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="fgosRelation" />
         <module name="spring_httpInvoker" />
+        <module name="account_zuul" />
+        <module name="zuul_server" />
         <module name="spring_ssh" />
         <module name="account_service" />
         <module name="account_client" />
         <module name="spring_springmvc" />
         <module name="spring_boot" />
+        <module name="eureka_server" />
         <module name="spring_ssm" />
         <module name="spirngboot" />
-        <module name="fgosRelation" />
-        <module name="account_zuul" />
-        <module name="zuul_server" />
-        <module name="eureka_server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
