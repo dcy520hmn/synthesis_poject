@@ -19,6 +19,9 @@
         <module>fgosRelation</module>
         <module>rabbitMq</module>
         <module>rabbitMq/rabbitMq_Primer</module>
+        <module>rabbitMq/integrate_MQ</module>
+        <module>rabbitMq/integrate_MQ/mq-rabbitmq-producer</module>
+        <module>rabbitMq/integrate_MQ/mq-rabbitmq-consumer</module>
     </modules>
 
     <parent>

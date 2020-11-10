@@ -5,6 +5,9 @@ import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.util.ConnectionUtil;
 
+/**
+ * Topics 通配符模式（交换机类型：topics）
+ */
 public class Send {
     private final static String EXCHANGE_NAME = "test_topic_exchange";
  
