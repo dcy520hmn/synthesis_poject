@@ -15,7 +15,7 @@ public class ConnectionUtil {
         //设置服务地址
         factory.setHost("192.168.61.129");
         //端口
-        factory.setPort(15672);
+        factory.setPort(5672);
         //设置账号信息，用户名、密码、vhost
         factory.setVirtualHost("/rabbitmq");//设置虚拟机，一个mq服务可以设置多个虚拟机，每个虚拟机就相当于一个独立的mq
         factory.setUsername("dcy");

@@ -13,7 +13,7 @@
 
 
     <properties>
-        <amqp.client.version>5.7.1</amqp.client.version>
+        <amqp.client.version>5.7.3</amqp.client.version>
     </properties>
 
     <dependencyManagement>

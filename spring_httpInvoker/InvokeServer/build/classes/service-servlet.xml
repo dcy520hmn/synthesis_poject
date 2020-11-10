@@ -11,7 +11,7 @@
     <bean id="userServiceImpl" class="com.abc.invoke.server.service.impl.UserServiceImpl" />
 
 
-    <!-- Announce that this interface is a HTTP invoker service. -->
+    <!-- 声明一个HttpInvoker服务 -->
     <bean id="userServiceInvoker" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
         <!--具体服务类新-->
         <property name="service" ref="userServiceImpl" />
@@ -20,7 +20,7 @@
     </bean>
 
 
-
+    <!--对外提供的服务的映射-->
     <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
         <property name="mappings">
             <props>
@@ -28,4 +28,5 @@
             </props>
         </property>
     </bean>
+
 </beans>
