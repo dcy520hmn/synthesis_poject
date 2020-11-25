@@ -22,6 +22,9 @@
         <module>rabbitMq/integrate_MQ</module>
         <module>rabbitMq/integrate_MQ/mq-rabbitmq-producer</module>
         <module>rabbitMq/integrate_MQ/mq-rabbitmq-consumer</module>
+        <module>database</module>
+        <module>sping_redis</module>
+        <module>database/hbase</module>
     </modules>
 
     <parent>

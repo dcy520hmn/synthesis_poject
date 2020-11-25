@@ -119,6 +119,5 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="tomcat" level="project" />
   </component>
 </module>

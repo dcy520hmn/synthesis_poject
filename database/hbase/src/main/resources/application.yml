@@ -1,0 +1,4 @@
+hbase:
+  configMap:
+    hbase.zookeeper.quorum: rhel123-1-fgos,rhel143-2-fgos,rhel63-3-fgos
+    hbase.zookeeper.property.clientPort: 2181
