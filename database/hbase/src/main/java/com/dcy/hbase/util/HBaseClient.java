@@ -1,6 +1,5 @@
-package com.dcy.hbase.common;
+package com.dcy.hbase.util;
 
-import com.dcy.hbase.StringUtils;
 import com.dcy.hbase.config.HbaseConfig;
 import org.apache.hadoop.hbase.Cell;
 import org.apache.hadoop.hbase.CompareOperator;

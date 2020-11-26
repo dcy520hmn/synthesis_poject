@@ -1,4 +1,4 @@
-package com.dcy.hbase;
+package com.dcy.hbase.util;
 
 
 import java.util.Collection;

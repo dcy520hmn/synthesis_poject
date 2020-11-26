@@ -1,4 +1,4 @@
-package com.dcy.hbase;
+package com.dcy.hbase.util;
 
 import com.dcy.hbase.config.HbaseConfig;
 import org.apache.hadoop.hbase.TableName;
@@ -10,13 +10,15 @@ import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.stereotype.Component;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.io.IOException;
 import java.util.ArrayList;
 
-@SpringBootTest
-@RunWith(SpringRunner.class)
+@Component
 public class HbaseDDL {
 
     private static Connection connection = null;
@@ -24,7 +26,7 @@ public class HbaseDDL {
 
     private static final Logger logger = LoggerFactory.getLogger(HbaseDDL.class);
 
-    @Before
+    @PostConstruct
     public void init() {
         if (connection != null) {
             return;
@@ -37,24 +39,6 @@ public class HbaseDDL {
         }
     }
 
-    @After
-    public  void close(){
-        try {
-            admin.close();
-            connection.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public void testDownMethod() throws IOException {
-        createTableOrOverWrite("myTable","cf1","cf2");
-//        updateColumnFamily("myTable","cf1");
-//        addColumnFamily("myTable","cf3");
-//        deleteColumnFamily("myTable","cf3");
-//        dropTable("myTable");
-    }
 
     /**
      * 在新建表时，需要判断表是否存在，存在则进行：停用、删除、覆盖
