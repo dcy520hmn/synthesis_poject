@@ -25,8 +25,9 @@
         <module>database</module>
         <module>sping_redis</module>
         <module>database/hbase</module>
-        <module>fgosRelation/canal</module>
         <module>java_Basic</module>
+        <module>bigdata</module>
+        <module>bigdata/curator-zk</module>
     </modules>
 
     <parent>

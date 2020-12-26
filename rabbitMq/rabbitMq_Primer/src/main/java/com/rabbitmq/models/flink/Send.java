@@ -1,4 +1,4 @@
-package com.rabbitmq.models.flin;
+package com.rabbitmq.models.flink;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -26,7 +26,10 @@ public class Send {
              */
             channel.queueDeclare(QUEUE_NAME, true, false, false, null);
             // 4、消息内容
-            String message = "Spark Hadoop Spark Flink";
+            for (int i = 0; i < 10000; i++) {
+                channel.basicPublish("", QUEUE_NAME, null, Integer.toBinaryString(i).getBytes());
+                Thread.sleep(1000);
+            }
             // 向指定的队列中发送消息
             //参数：String exchange, String routingKey, BasicProperties props, byte[] body
             /**
@@ -36,8 +39,6 @@ public class Send {
              * 3、props，消息的属性
              * 4、body，消息内容
              */
-            channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
-            System.out.println(" [x] Sent '" + message + "'");
 
             //关闭通道和连接(资源关闭最好用try-catch-finally语句处理)
             channel.close();
