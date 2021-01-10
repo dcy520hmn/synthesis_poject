@@ -17,7 +17,7 @@ public class CuratorOfCRUDApi {
     @Before
     public void testConnection(){
         RetryForever retryForever = new RetryForever(100);
-        client = CuratorFrameworkFactory.builder().connectString("192.168.61.129:2181")
+        client = CuratorFrameworkFactory.builder().connectString("192.168.61.129:2181,192.168.61.130:2181,192.168.61.131:2181")
                 .sessionTimeoutMs(60 * 1000)
                 .connectionTimeoutMs(15 * 1000)
                 .retryPolicy(retryForever)
