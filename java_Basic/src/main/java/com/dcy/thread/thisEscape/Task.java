@@ -1,10 +1,13 @@
 package com.dcy.thread.thisEscape;
 
 
-public class ListenerRunnable implements Runnable {
+/**
+ * 描述：用来触发监听器。
+ */
+public class Task implements Runnable {
     private EventSource source;
 
-    public ListenerRunnable(EventSource source) {
+    public Task(EventSource source) {
         this.source = source;
     }
 

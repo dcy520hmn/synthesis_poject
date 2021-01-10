@@ -3,6 +3,10 @@ package com.dcy.thread.thisEscape;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 描述：
+ *  该事件源中存在多个监听器，对事件进行监听。
+ */
 public class EventSource {
 
     private final List<AEventListener> eventListeners;
@@ -16,6 +20,10 @@ public class EventSource {
         this.notifyAll();
     }
 
+    /**
+     * 触发监听器之后，监听器要做的事情
+     * @throws InterruptedException
+     */
     protected synchronized void notifies() throws InterruptedException {
         if(eventListeners.size() <= 0){
             this.wait();
@@ -25,6 +33,9 @@ public class EventSource {
         }
     }
 
+    /**
+     * 触发监听器
+     */
     public  void trigger() {
         try {
             this.notifies();
