@@ -28,6 +28,7 @@
         <module>java_Basic</module>
         <module>bigdata</module>
         <module>bigdata/curator-zk</module>
+        <module>utils</module>
     </modules>
 
     <parent>

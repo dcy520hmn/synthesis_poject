@@ -11,7 +11,7 @@
     <bean id="userServiceImpl" class="com.abc.invoke.server.service.impl.UserServiceImpl" />
 
 
-    <!-- 声明一个HttpInvoker服务 -->
+
     <bean id="userServiceInvoker" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
         <!--具体服务类新-->
         <property name="service" ref="userServiceImpl" />
