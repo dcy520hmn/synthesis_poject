@@ -16,6 +16,6 @@ public class AccountController {
 
     @RequestMapping("/findAccountById/{id}")
     public Account findAccountById(@PathVariable Integer id){
-          return accountService.findAccountById(id);
+          return accountService.findAccountById(id);//返回是对象，还是json？？是否包含方法？？
     }
 }

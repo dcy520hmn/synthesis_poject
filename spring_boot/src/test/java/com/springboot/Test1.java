@@ -26,6 +26,7 @@ public class Test1 {
 
     @Autowired
     private DruidDataSource druidDataSource;
+
     @Test
     public void test1(){
         System.out.println(druidDataSource);

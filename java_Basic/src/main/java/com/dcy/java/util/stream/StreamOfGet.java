@@ -6,6 +6,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Stream;
 
+/**
+ * 流的API学习，如
+ */
 public class StreamOfGet {
     public static void main(String[] args) {
         //单列集合获取流

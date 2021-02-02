@@ -4,11 +4,18 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
+
+/**
+ * account 切面，在accountService进行转账的时候进行额外的操作。主要了解前置通知、后置通知、环绕通知。
+ */
 @Aspect
 @Component
 public class AccountAspect {
 
-    @Pointcut("execution(public * com.springboot.service.impl.*.*(..))")
+    /**
+     * execution形式
+     */
+    @Pointcut("execution(public * com.springboot.service.impl.AccountService.transfer(..))")
     private void dsPointCut()
     {
 
@@ -18,7 +25,6 @@ public class AccountAspect {
     public void before(){
         System.out.println("设置非自动提交，开启事务");
     }
-
 
     @After("dsPointCut()")
     public void after(){
@@ -36,7 +42,28 @@ public class AccountAspect {
     }
 
 
-    @Around("dsPointCut()")
+    /**
+     * annotation:自定义注解标注在方法上的方法执行aop方法
+     * within:自定义注解标注在的类上；该类的所有方法（不包含子类方法）执行aop方法
+     */
+    @Pointcut("@annotation(com.springboot.config.aspect.LogAspect)"+
+            "||@within(com.springboot.config.aspect.LogAspect)")
+    private void defineCut(){
+
+    }
+
+    @Before("defineCut()")
+    public void logBefore(){
+        System.out.println("before_log");
+    }
+
+
+    @After("defineCut()")
+    public void logAfter(){
+        System.out.println("after_log");
+    }
+
+    //@Around("dsPointCut()")
     public void around(ProceedingJoinPoint pjp){
         //获取方法执行所需的参数
         Object rtValue = null;
