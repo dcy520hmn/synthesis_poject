@@ -13,6 +13,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * Á÷µÄÑ§Ï°
+ */
 public class StreamDemo {
 
     private List<String> words;

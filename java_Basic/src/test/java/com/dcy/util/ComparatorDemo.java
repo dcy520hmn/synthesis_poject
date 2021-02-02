@@ -10,6 +10,9 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * 比较器的使用
+ */
 public class ComparatorDemo {
 
     private ArrayList<Student> students;
