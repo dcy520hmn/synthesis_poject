@@ -38,9 +38,13 @@
 
 - Stream特性
 
-  :full_moon:[Stream](java_Basic/src/test/java/com/dcy/util/StreamDemo.java)
+  :full_moon:[StreamDemo](java_Basic/src/test/java/com/dcy/util/StreamDemo.java)
 
+- 比较器
 
+  :full_moon:[ComparatorDemo](java_Basic/src/test/java/com/dcy/util/ComparatorDemo.java)
+
+- 测
 
 
 # leading_End
