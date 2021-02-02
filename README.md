@@ -36,7 +36,7 @@
 
 ## java_Basic
 
-1. :full_moon:[Stream](**src/test/java/com/dcy/util/StreamDemo.java**)
+1. :full_moon:[Stream](src/test/java/com/dcy/util/StreamDemo.java)
 
    
 
