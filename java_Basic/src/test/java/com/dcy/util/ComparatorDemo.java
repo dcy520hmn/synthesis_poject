@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * 比较器的使用
+ * 姣旇緝鍣ㄧ殑浣跨敤
  */
 public class ComparatorDemo {
 

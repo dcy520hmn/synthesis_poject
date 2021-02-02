@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * Á÷µÄÑ§Ï°
+ * æµçš„å­¦ä¹ 
  */
 public class StreamDemo {
 
@@ -22,7 +22,7 @@ public class StreamDemo {
 
     @Before
     public void before() throws IOException {
-        //³õÊ¼¸ÅÄî
+        //æµçš„æ¦‚å¿µ
         String contents = new String(Files.readAllBytes(Paths.get("Test.txt")), StandardCharsets.UTF_8);
         words = Arrays.asList(contents.split("\\PL+"));
     }
@@ -53,7 +53,7 @@ public class StreamDemo {
         System.out.println(collect);
     }
 
-    //flatMap,Ñ¹Æ½
+    //flatMapï¼Œå‹å¹³
     @Test
     public void test5() throws IOException{
 //        List<Stream<String>> collect = words.stream().map(w -> codePoints(w)).collect(Collectors.toList());
