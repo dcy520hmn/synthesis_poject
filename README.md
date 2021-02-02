@@ -24,6 +24,14 @@
 |         **[spring_ssm](# spring_ssm)**         |                ssm框架集成（采用xml形式）                |
 |              **[utils](# utils)**              |  日常中的工具：dorm4j（xml文件解析）、trace（链路追踪）  |
 
+|  分级  | 阅读完成度 | 含义 |
+| :---: | -------- | ---- |
+|   1   | :full_moon: | 完成阅读，方法/字段已读完，实现过程已了解 |
+|   2   | :waxing_gibbous_moon: | 完成阅读，方法/字段已读完，但一些实现细节未掌握 |
+|   3   | :first_quarter_moon: | 正在阅读，方法/字段未读完，理解了大部分特性 |
+|   4   | :waxing_crescent_moon: | 正在阅读，方法/字段未读完，只涉猎了一部分特性 |
+|   5   | :new_moon: | 初步接触，有限的了解，大概知道该类的作用 |
+
 # synthesis_poject
 
 # bigdata
@@ -66,3 +74,8 @@
 # spring_ssm
 
 # utils
+
+##  trace
+
+:waxing_crescent_moon:[ReadMe](utils/trace/README.md)
+
