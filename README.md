@@ -36,6 +36,28 @@
 
 # bigdata
 
+- ***curator-zk***
+
+- ***hadoopClient***
+
+  描述：用于学习Hadoop客户端API
+
+- ***kafkaClient***
+
+  描述：用于学习kafka生成者API与消费者API
+
+  - ***producer***
+
+    - 同步向kafa发送消息
+
+      [ProducerAsync](bigdata/kafkaClient/producer/src/main/java/com/dcy/kafka/ProducerAsync.java)
+
+    - 异步向kafka发送消息
+
+      [ProducerSync](bigdata/kafkaClient/producer/src/main/java/com/dcy/kafka/ProducerSync.java)
+
+  - ***consumer***
+
 # database
 
 # fgosRelation

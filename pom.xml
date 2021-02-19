@@ -31,6 +31,8 @@
         <module>utils</module>
         <module>bigdata</module>
         <module>bigdata/hadoopClient</module>
+        <module>bigdata/kafkaClient</module>
+        <module>bigdata/kafkaClient/consumer</module>
     </modules>
 
     <parent>
