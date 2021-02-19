@@ -7,10 +7,15 @@ import org.springframework.stereotype.Component;
 
 /**
  * account 切面，在accountService进行转账的时候进行额外的操作。主要了解前置通知、后置通知、环绕通知。
+ * 主要是队AOP知识进行学习，其中对
+ * 测试代码在：com/springboot/AopTest.java
+ * 同事对PointCut常见注解就行了验证
  */
+
 @Aspect
 @Component
 public class AccountAspect {
+
 
     /**
      * execution形式

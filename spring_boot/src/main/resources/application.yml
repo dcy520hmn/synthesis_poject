@@ -8,13 +8,11 @@ server:
   port: 8080
 
 spring:
+  #数据源
   datasource:
     url: jdbc:mysql://172.20.19.121:3306/nfgos?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true
     username: root
     password: P@ssw0rd
-  aop:
-    auto=true:
-
 mybatis:
   type-aliases-package: com.springboot.pojo
   mapper-locations: mappers/*.xml

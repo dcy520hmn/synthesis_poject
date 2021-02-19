@@ -12,4 +12,13 @@ public class Student {
     private Integer classId;
     private String name;
     private Integer age;
+
+    public Object clone() {
+        try {
+            Student student = (Student) super.clone();
+            return student;
+        } catch (CloneNotSupportedException e) {
+            throw new InternalError(e);
+        }
+    }
 }

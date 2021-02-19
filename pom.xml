@@ -29,6 +29,8 @@
         <module>bigdata</module>
         <module>bigdata/curator-zk</module>
         <module>utils</module>
+        <module>bigdata</module>
+        <module>bigdata/hadoopClient</module>
     </modules>
 
     <parent>

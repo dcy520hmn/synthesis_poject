@@ -2,7 +2,7 @@
 
 <span style='color:black;background:背景颜色;font-size:40px;font-family:字体;'>synthesis_poject</span>
 
-该项目用于日常技术学习与积累，包含了大量的Demo。为方便日后查询Demo，可参考以下内容
+该项目用于日常技术学习与积累，包含了大量的Demo，每个Demo都与node.md知识相对应，可先参考node中学习概念知识，然后在Readme中找到对应练习。为方便日后查询Demo，可参考以下内容。
 
 <span style='color:black;background:背景颜色;font-size:40px;font-family:字体;'>模块描述</span>
 
@@ -52,7 +52,11 @@
 
   :full_moon:[ComparatorDemo](java_Basic/src/test/java/com/dcy/util/ComparatorDemo.java)
 
-- 测
+- 虚拟机
+
+  - 静态方法解析
+
+    [StaticMethodResolution](java_Basic/src/main/java/com/dcy/hotspot/stackFrame/StaticMethodResolution.java)
 
 
 # leading_End
@@ -62,6 +66,14 @@
 # sping_redis
 
 # spring_boot
+
+- 注解配置Bean
+
+  [BeanDemo](spring_boot/src/main/java/com/springboot/config/beanDemo/BeanDemo.java)
+
+- AOP
+
+  [AccountAspect](spring_boot/src/main/java/com/springboot/config/aspect/AccountAspect.java)
 
 # spring_cloud
 
@@ -77,5 +89,7 @@
 
 ##  trace
 
-:waxing_crescent_moon:[ReadMe](utils/trace/README.md)
+- 项目预览
+
+  :waxing_crescent_moon:[ReadMe](utils/trace/README.md)
 
