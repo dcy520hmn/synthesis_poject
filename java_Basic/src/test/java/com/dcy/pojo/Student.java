@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Student {
+public class Student implements Cloneable{
     private Integer id;
     private Integer classId;
     private String name;

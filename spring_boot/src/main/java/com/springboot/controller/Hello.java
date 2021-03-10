@@ -29,4 +29,15 @@ public class Hello {
     public void aopTest(){
         accountService.transfer();
     }
+
+    @RequestMapping("/ioTest")
+    public List<Account> ioTest(){
+        List<Account> accountList = accountMapper.findAllAccount();
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return accountList;
+    }
 }

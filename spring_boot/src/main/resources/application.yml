@@ -1,24 +1,12 @@
-#spring:
-#  datasource:
-#    url: jdbc:mysql://127.0.0.1/dcy?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
-#    username: root
-#    password: "0325"
-#项目中用到的
 server:
   port: 8080
 
 spring:
-  #数据源
   datasource:
-    url: jdbc:mysql://172.20.19.121:3306/nfgos?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true
+    url: jdbc:mysql://127.0.0.1/dcy?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
-    password: P@ssw0rd
+    password: "0325"
+
 mybatis:
   type-aliases-package: com.springboot.pojo
   mapper-locations: mappers/*.xml
-
-
-#jdbc.driverClassName=com.mysql.jdbc.Driver
-#jdbc.url=jdbc:mysql://172.27.101.186:3306/leyou
-#jdbc.username=root
-#jdbc.password=0325

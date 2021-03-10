@@ -1,18 +1,20 @@
 package com.dcy.someTest;
 
+import com.dcy.pojo.Student;
+
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
+import java.util.List;
+
 
 public class T {
     public static void main(String[] args) {
-        ArrayList<Integer> integers = new ArrayList<>();
-        integers.add(1);
-        integers.add(2);
-        integers.add(3);
-        Object[] objects = integers.toArray(integers.toArray());
-        for (Object object : objects) {
-            System.out.println(object);
-        }
+        ArrayList<Integer> integer1 = new ArrayList<>();
+        integer1.add(1);
+        integer1.add(2);
+        integer1.add(3);
+        integer1.add(4);
+        List<Integer> integers = integer1.subList(2, 3);
+        integers.add(0);
+        System.out.println(integers);
     }
 }

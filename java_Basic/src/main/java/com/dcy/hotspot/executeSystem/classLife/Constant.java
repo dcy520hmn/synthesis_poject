@@ -1,4 +1,4 @@
-package com.dcy.hotspot.classLife;
+package com.dcy.hotspot.executeSystem.classLife;
 
 public class Constant {
     static {
