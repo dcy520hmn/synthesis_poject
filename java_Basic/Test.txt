@@ -1,8 +1,0 @@
-Unbounded, unordered, global-scale datasets are increasingly common in day-to-day business (e.g. Web logs, mobile
-usage statistics, and sensor networks). At the same time,
-consumers of these datasets have evolved sophisticated requirements, such as event-time ordering and windowing by
-features of the data themselves, in addition to an insatiable
-hunger for faster answers. Meanwhile, practicality dictates
-that one can never fully optimize along all dimensions of correctness, latency, and cost for these types of input. As a result, data processing practitioners are left with the quandary
-of how to reconcile the tensions between these seemingly
-competing propositions, often resulting in disparate implementations and systems.

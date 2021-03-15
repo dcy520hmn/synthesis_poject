@@ -1,0 +1,11 @@
+server:
+  port: 8082
+
+dubbo:
+  application:
+    name: dubbodemo_consumer
+  registry:
+    address: zookeeper://192.168.61.132
+    port: 2181
+  scan:
+    base-packages: com.dcy.dubbo.consumer

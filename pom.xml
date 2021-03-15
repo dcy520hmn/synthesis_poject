@@ -33,6 +33,7 @@
         <module>bigdata/hadoopClient</module>
         <module>bigdata/kafkaClient</module>
         <module>bigdata/kafkaClient/consumer</module>
+        <module>serverSOA</module>
     </modules>
 
     <parent>

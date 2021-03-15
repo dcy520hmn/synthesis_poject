@@ -5,6 +5,14 @@ package com.dcy.hotspot.executeSystem.practice;
  * @author
  */
 public class ByteUtils {
+
+    /**
+     * 将byte转成int
+     * @param b
+     * @param start
+     * @param len
+     * @return
+     */
     public static int bytes2Int(byte[] b, int start, int len) {
         int sum = 0;
         int end = start + len;
