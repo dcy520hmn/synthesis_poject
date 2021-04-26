@@ -122,3 +122,11 @@
   :waxing_crescent_moon:[ReadMe](utils/trace/README.md)
 
 # serverSAP
+
+# message
+
+- 简介
+
+  国际化处理，springboot中使用MessageSource国际化
+
+- 
