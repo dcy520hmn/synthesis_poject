@@ -8,6 +8,11 @@
     <artifactId>synthesis_poject</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <poi.version>3.17</poi.version>
+    </properties>
+
     <modules>
         <module>spring_springmvc</module>
         <module>spring_ssm</module>
@@ -34,6 +39,7 @@
         <module>bigdata/kafkaClient</module>
         <module>bigdata/kafkaClient/consumer</module>
         <module>serverSOA</module>
+        <module>utils/utilities</module>
     </modules>
 
     <parent>
@@ -42,6 +48,7 @@
         <version>2.1.3.RELEASE</version>
         <relativePath/>
     </parent>
+
 
 
 </project>
