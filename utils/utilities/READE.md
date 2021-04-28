@@ -1,6 +1,6 @@
 [TOC]
 
-# [Apache POI](utils/utilities/src/main/java/com/dcy/util/ExcelUtil.java)
+# [Apache POI](utils/utilities/src/main/java/com/dcy/common/util/ExcelUtil.java)
 
 参考：https://blog.csdn.net/vbirdbest/article/details/72870714
 
@@ -86,4 +86,14 @@ Excel中的工作簿、工作表、行、单元格中的关系：
 一个sheet是由多个row（HSSFRow）组成，
 一个row是由多个cell（HSSFCell）组成
 ```
+
+# [反射](utils/utilities/src/main/java/com/dcy/common/java/reflect/ReflectPlay.java)
+
+参考文档
+
+https://blog.csdn.net/sinat_38259539/article/details/71799078
+
+https://huanglinqing.blog.csdn.net/article/details/88554510
+
+主要参考帮助文档：java.lang.Class API
 
