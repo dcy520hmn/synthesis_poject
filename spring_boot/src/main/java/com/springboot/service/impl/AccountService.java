@@ -7,12 +7,13 @@ import org.springframework.stereotype.Service;
  * 该类的所有方法都是连接点
  */
 @Service
-@LogAspect
+//@LogAspect
 public class AccountService {
 
-    @LogAspect
+    //@LogAspect
     public void transfer(){
         System.out.println("A:-1000");
+         int z =  3/0;
         System.out.println("B:+1000");
     }
 

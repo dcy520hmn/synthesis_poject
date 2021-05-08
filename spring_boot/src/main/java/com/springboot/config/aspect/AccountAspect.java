@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * account 切面，在accountService进行转账的时候进行额外的操作。主要了解前置通知、后置通知、环绕通知。
  * 主要是队AOP知识进行学习，其中对
  * 测试代码在：com/springboot/AopTest.java
- * 同事对PointCut常见注解就行了验证
+ * 同时对PointCut常见注解就行了验证
  */
 
 @Aspect
@@ -31,19 +31,19 @@ public class AccountAspect {
         System.out.println("设置非自动提交，开启事务");
     }
 
-    @After("dsPointCut()")
-    public void after(){
-        System.out.println("提交");
-    }
-
     @AfterReturning("dsPointCut()")
     public void afterReturn(){
-        System.out.println("释放资源");
+        System.out.println("提交");
     }
 
     @AfterThrowing("dsPointCut()")
     public void afterThrow(){
         System.out.println("异常回滚");
+    }
+
+    @After("dsPointCut()")
+    public void after(){
+        System.out.println("释放资源");
     }
 
 
@@ -53,9 +53,7 @@ public class AccountAspect {
      */
     @Pointcut("@annotation(com.springboot.config.aspect.LogAspect)"+
             "||@within(com.springboot.config.aspect.LogAspect)")
-    private void defineCut(){
-
-    }
+    private void defineCut(){}
 
     @Before("defineCut()")
     public void logBefore(){

@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
- * aopÑ§Ï°²âÊÔ
+ * aopå­¦ä¹ æµ‹è¯•
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
@@ -23,6 +23,6 @@ public class AopTest {
     @Test
     public void test1(){
         accountService.transfer();
-        accountService.transfer1();
+        //accountService.transfer1();
     }
 }
