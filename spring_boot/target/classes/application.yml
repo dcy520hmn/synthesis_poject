@@ -10,3 +10,11 @@ spring:
 mybatis:
   type-aliases-package: com.springboot.pojo
   mapper-locations: mappers/*.xml
+
+# 读取yml配置信息
+userinfo:
+  user-id: 1
+  user-name: dcy
+  blog-url: baidu.com
+  hobbys: -[篮球,足球,羽毛球,乒乓球,游泳]
+  blog-remark: 您好

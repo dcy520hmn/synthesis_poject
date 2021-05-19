@@ -15,7 +15,7 @@ public class Recv2 {
         // 获取到连接
         Connection connection = ConnectionUtil.getConnection();
         //创建会话通道,生产者和mq服务所有通信都在channel通道中完成
-        Channel channel = connection.createChannel();
+        final Channel channel = connection.createChannel();
         // 声明队列
         //参数：String queue, boolean durable, boolean exclusive, boolean autoDelete, Map<String, Object> arguments
         /**

@@ -8,14 +8,10 @@
 
 |                    模块名称                    |                             描述                             |
 | :--------------------------------------------: | :----------------------------------------------------------: |
-|              **synthesis_poject**              |            父模块队以下模块的依赖进行版本控制管理            |
 |            **[bigdata](# bigdata)**            |                          大数据内容                          |
 |           [**dtabase**](# database)            |                          数据库内容                          |
-|       **[fgosRelation](# fgosRelation)**       |                        项目中技术内容                        |
-|         **[java_Basic](# java_Basic)**         |                           jdk内容                            |
-|        **[leading_End](# leading_End)**        |                           前端内容                           |
+|         **[java_Basic](# java_Basic)**         |                     jdk内容，Java虚拟机                      |
 |           **[rabbitMq](# rabbitMq)**           |                            MQ内容                            |
-|        **[sping_redis](# sping_redis)**        |                          Redis内容                           |
 |        **[spring_boot](# spring_boot)**        |     一个完整的springboot应用，具有启动器，可以web访问。      |
 |       **[spring_cloud](# spring_cloud)**       |   spring_cloud应用包含，服务之间的调用、注册中心、负载均衡   |
 | **[spring_httpInvoker](# spring_httpInvoker)** |                      RPC的一种调用方式                       |
@@ -34,6 +30,8 @@
 | [AOP](spring_boot/src/main/java/com/springboot/config/aspect/AccountAspect.java) | **[spring_boot](# spring_boot)** |
 | [AOP动态代理实现方式](https://blog.csdn.net/q982151756/article/details/80586894) | **[spring_boot](# spring_boot)** |
 | [动态代理技术](https://blog.csdn.net/q982151756/article/details/80586894) | **[spring_boot](# spring_boot)** |
+| [读取yml配置文件](#spring_boot/src/test/java/com/springboot/ReadYmlTest.java) | **[spring_boot](# spring_boot)** |
+| log4j2                                                       | **[spring_boot](# spring_boot)** |
 | [反射](utils/utilities/src/main/java/com/dcy/common/java/reflect/ReflectPlay.java) | [**utilities**](# utilities)     |
 | [POI](utils/utilities/src/main/java/com/dcy/common/util/ExcelUtil.java) | [**utilities**](# utilities)     |
 
@@ -69,60 +67,80 @@
 
 # database
 
-# fgosRelation
-
 # java_Basic
 
-- 阿里巴巴技术
+## 阿里巴巴技术
 
-  [AsyncCall](java_Basic/src/test/java/com/dcy/alibaba/AsyncCall.java)：异步非阻塞编程
+[AsyncCall](java_Basic/src/test/java/com/dcy/alibaba/AsyncCall.java)：异步非阻塞编程
 
-  
+## Stream特性
 
-## java_Basic
+:full_moon:[StreamDemo](java_Basic/src/test/java/com/dcy/util/StreamDemo.java)
 
-- Stream特性
+## 比较器
 
-  :full_moon:[StreamDemo](java_Basic/src/test/java/com/dcy/util/StreamDemo.java)
+:full_moon:[ComparatorDemo](java_Basic/src/test/java/com/dcy/util/ComparatorDemo.java)
 
-- 比较器
+## 虚拟机
 
-  :full_moon:[ComparatorDemo](java_Basic/src/test/java/com/dcy/util/ComparatorDemo.java)
+### 静态方法解析
 
-- 虚拟机
+[StaticMethodResolution](java_Basic/src/main/java/com/dcy/hotspot/executeSystem/stackFrame/StaticMethodResolution.java)
 
-  - 静态方法解析
+### Java虚拟机类加载以及子系统实战：在服务端执行临时代码
 
-    [StaticMethodResolution](java_Basic/src/main/java/com/dcy/hotspot/executeSystem/stackFrame/StaticMethodResolution.java)
-  
-  - Java虚拟机类加载以及子系统实战：在服务端执行临时代码
-  
-    [practice](java_Basic/src/main/java/com/dcy/hotspot/executeSystem/practice)
-
-# leading_End
+[practice](java_Basic/src/main/java/com/dcy/hotspot/executeSystem/practice)
 
 # rabbitMq
 
-# sping_redis
-
 # spring_boot
 
-##  技术清单
+## AOP
 
-- [注解配置Bean](spring_boot/src/main/java/com/springboot/config/beanDemo/BeanDemo.java)
-- [AOP](spring_boot/src/main/java/com/springboot/config/aspect/AccountAspect.java)
+**前置通知[Before advice]：**在连接点前面执行，前置通知不会影响连接点的执行，除非此处抛出异常。
+**正常返回通知[After returning advice]：**在连接点正常执行完成后执行，如果连接点抛出异常，则不会执行。
+**异常返回通知[After throwing advice]：**在连接点抛出异常后执行。
+**返回通知[After (finally) advice]：**在连接点执行完成后执行，不管是正常执行完成，还是抛出异常，都会执行返回通知中的内容。
+**环绕通知[Around advice]：**环绕通知围绕在连接点前后，比如一个方法调用的前后。这是最强大的通知类型，能在方法调用前后自定义一些操作。环绕通知还需要负责决定是继续处理join point(调用ProceedingJoinPoint的proceed方法)还是中断执行。
 
-## 技术学习
 
-- AOP
 
-  **前置通知[Before advice]：**在连接点前面执行，前置通知不会影响连接点的执行，除非此处抛出异常。
-  **正常返回通知[After returning advice]：**在连接点正常执行完成后执行，如果连接点抛出异常，则不会执行。
-  **异常返回通知[After throwing advice]：**在连接点抛出异常后执行。
-  **返回通知[After (finally) advice]：**在连接点执行完成后执行，不管是正常执行完成，还是抛出异常，都会执行返回通知中的内容。
-  **环绕通知[Around advice]：**环绕通知围绕在连接点前后，比如一个方法调用的前后。这是最强大的通知类型，能在方法调用前后自定义一些操作。环绕通知还需要负责决定是继续处理join point(调用ProceedingJoinPoint的proceed方法)还是中断执行。
+## 读取yml配置文件
 
-- 
+读取yml配置文件有两种方式，无论哪两种方式都需要将配置文件的封装类扫描入IOC容器：
+
+1. @Value方式。
+
+2. @ConfigurationProperties与@EnableConfigurationProperties相结合的方式。
+
+   ***@ConfigurationProperties作用：***将配置文件中的信息，封装到Java类中。
+
+   可以使用@Component扫描入IOC容器，也可以使用别的注解进行扫描，如@Configuration也可以。@ConfigurationProperties也可以放到@Configuration类中，配置Bean时参数位置。
+
+   ```java
+   @Configuration
+   public class UserConfiguration {
+   
+       @Bean
+       @ConfigurationProperties(prefix = "userinfo")
+       public Integer getUserProperties(UserPropertiesMethod_02 userPropertiesMethod_02){
+           System.out.println(userPropertiesMethod_02);
+           return new Integer(1);
+       }
+   }
+   
+   //此处使用@Configuration进行注入， @ConfigurationProperties放入到生命Bean时进行配置
+   @Configuration
+   public class UserPropertiesMethod_02 {
+       private int userId;
+   	//get set 方法省略
+   }
+   
+   ```
+
+   ***@EnableConfigurationProperties作用：***将有@ConfigurationProperties注解的类（targetClass）加入到IOC容器中。
+
+具体实现形式参考[ReadYmlTest](#spring_boot/src/test/java/com/springboot/ReadYmlTest.java)。
 
 # spring_cloud
 
@@ -259,11 +277,3 @@ https://huanglinqing.blog.csdn.net/article/details/88554510
 
 
 # serverSAP
-
-# message
-
-- 简介
-
-  国际化处理，springboot中使用MessageSource国际化
-
-- 
