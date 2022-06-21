@@ -24,7 +24,7 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
         <mybatis.version>1.3.2</mybatis.version>
-        <mysql.connection>5.1.13</mysql.connection>
+        <mysql.connection>8.0.28</mysql.connection>
         <mapper.starter.version>2.0.2</mapper.starter.version>
     </properties>
 
